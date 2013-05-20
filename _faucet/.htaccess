@@ -1,0 +1,15 @@
+##set the path to the "_faucet" directory below"##
+
+AuthUserFile /path/to/htpasswd/file/.htpasswd
+
+AuthName "submissions"
+
+AuthType Basic
+
+<Files "/_faucet/list.txt">
+
+  require valid-user
+
+</Files>
+
+##################################################

@@ -1,0 +1,40 @@
+GENERIC CRYPTOCOIN FAUCETv1
+written by r3wt http://1gld.co.nf any questions comments or thank yous send to stuckinabox@live.com
+------------------
+Installing
+------------------
+Warning: I've set the script up for you to store all your images in the images file. it is not neccessary to include 
+the full url, instead just place your image in the /images/ directory and link them like this <img src="/images/file.png"
+
+1.Unzip the contents
+2.open /_faucet/admin_very.php and set your username and password in the provided area.
+3.save the file.
+4.Make all the theme modifications you need.
+5.Important. If someone knows the path to your list.txt they can easily read it to combat this, i've included an 
+.htaccessfile with the download
+you will need to configure this file to work properly to protect unauthorized viewing of your list.
+Luckily there are a number of available tutorials, but this one is best:
+
+http://webdesign.about.com/od/htaccess/ht/password_1_file.htm
+
+Follow the instructions in the tutorial and then upload everything to your server.
+test your protected file by trying to access the list directly. for example type "http://yoursite.com/_faucet/list.txt"
+if it prompts you for a password then you are good to go.
+
+6. This is the most important step. Go to the /_faucet/ directory and chmod(777) the list.txt file. this file acts 
+as your database for your info. 
+If you do not take this step the verify_form.php script wont be able to write the submissions, and you will not be able 
+to view or edit them in the admin.php
+page.
+
+7. As a final word, i recommend you look into adding onto the verify.php script and adding a captcha to the submission 
+form to reduce spam. also you may want to look into encrypting your password
+in the admin_verify.php file to protect your self from hackers.
+
+8. This is a lightweight and portable script you should be able to build an impressive faucet on. If you use it, 
+please donate.
+
+----------------------------------------
+BTC: 149kA4WrXuDpDTAEksjAwzS67UxXbhXq4E
+LTC: LMy9J67CDtnMqGerKQd2uwZo6WoBeKCTpC
+GLD: EEca6j252g3avgoRazh7LSn1fDiWNBrqoV
